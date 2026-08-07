@@ -1,0 +1,83 @@
+<!--Block div: always new line-->
+<!--Center div: margin:ayto - center-->
+<!--Float div : side by side-->
+<!--Inline-block div : same line,only content width-->
+<!--Flexbox div : responsive layout-->
+<!--Grid div : row+column layout-->
+
+<!DOCTYPE html>
+<hrml>
+    <head>
+        <style>
+            /* General div style */
+            .div-box {
+                border:1px solid black;
+                padding:10px;
+                width:150px;
+                height:80px;
+                text-align:center;
+                margin:5px
+            }
+            /* Center align div */
+            .center-div{
+                margin:auto; 
+                width:200px
+                background-color:lightblue;
+            }
+            /*Float div */
+            .float-div {
+                float:left;
+                background-color:darkmagenta;
+            }
+            /*Inline - block div */
+            .inline-div {
+                display:inline-block;
+                background-color: lightsalmon;
+            }
+            /*Flex container*/
+            .flex-container {
+                display:flex;
+                gap:10px;
+                background-color:darkred;
+            }
+            /*Grid container*/
+            .grid-container {
+                display:grid;
+                grid-template-columns: 150px 150px 150px;
+                gap:10px;
+                background-color:orange;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>Normal Div</h2>
+        <div class="div-box">Block Div</div>
+
+        <h2>Center Align</h2>
+        <div class="center div">Center Div</div>
+
+        <h2>Float Divs</h2>
+        <div class="float-div div-box">Float 1</div>
+<div class="float-div div-box">Float 2</div>
+<div style="clear:both;"></div> <!-- float clear -->
+
+<h2>Inline-block Divs</h2>
+<div class="inline-div div-box">Inline 1</div>
+<div class="inline-div div-box">Inline 2</div>
+
+<h2>Flexbox Divs</h2>
+<div class="flex-container">
+  <div class="div-box">Flex 1</div>
+  <div class="div-box">Flex 2</div>
+  <div class="div-box">Flex 3</div>
+</div>
+
+<h2>Grid Divs</h2>
+<div class="grid-container">
+  <div class="div-box">Grid 1</div>
+  <div class="div-box">Grid 2</div>
+  <div class="div-box">Grid 3</div>
+</div>
+    </body>
+</hrml>
