@@ -1,0 +1,12 @@
+/*--Cascading Order:
+When multiple styles are applied to the same HTML element, CSS follows a priority order.-->
+
+<!-Priority:
+
+Inline CSS > Internal/External CSS > Browser Default
+
+So, Inline CSS has the highest priority and can override Internal CSS, External CSS, and browser default styles.*/
+
+h1 {
+    color:teal;
+}
